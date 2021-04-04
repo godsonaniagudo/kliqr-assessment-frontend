@@ -1,0 +1,233 @@
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    height: 92vh;
+    display: flex;
+    flex-direction: row;
+
+    .contentLeft {
+        .leftTitle {
+            font-weight: bold;
+            text-align: left;
+            font-size: 35;
+            font-family: 'Roboto', sans-serif;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        width: 30%;
+        max-height: 100%;
+        overflow: scroll;
+    }
+
+    .contentRight {
+        width: 70%;
+        max-height: 100%;
+        overflow-y: scroll;
+
+        .loading {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .userDetails {
+            display: flex;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            justify-content: center;
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+
+            .nameText {
+                font-size: 35px;
+                font-weight: 500;
+                margin-top: 10px;
+                margin-bottom: 0px;
+
+            }
+        }
+
+        .userStats {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-between;
+        }
+
+        .userTrends {
+            display: flex;
+            flex-direction: row;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+
+            p {
+                text-align: left;
+            }
+
+            .headingText {
+                font-weight: 500;
+                font-size: 16px;
+                color: rgb(61, 61, 61);
+            }
+
+            .trendContainer {
+                padding: 20px;
+                flex-grow: 1;
+            }
+
+            .similarContainer {
+                padding: 20px;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+
+
+.nav {
+    width: 100%;
+    height: 8vh;
+    background-color: #423C68;
+}
+
+.statCard {
+    width: 32%;
+    box-shadow: 1px 2px 19px 0px rgba(227, 227, 227, 0.75);
+    -webkit-box-shadow: 1px 2px 19px 0px rgba(227, 227, 227, 0.75);
+    -moz-box-shadow: 1px 2px 19px 0px rgba(227, 227, 227, 0.75);
+    border-style: none;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    color: #4A47A3;
+
+    .headingText {
+        margin: 0px;
+        font-size: 10px;
+        color: #413C69;
+    }
+
+    .valueText {
+        margin: 0px;
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+.trendIconsContainer {
+    display: flex;
+    flex-direction: row;
+
+
+    .trendIcon {
+        background-color: #A7C5EB;
+        width: 23%;
+        margin-right: 20px;
+        border-radius: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+
+
+.userItem {
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 10px;
+    }
+
+    div {
+
+        .nameText {
+            font-size: 19px;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            margin: 0px;
+            margin-bottom: 5px;
+        }
+
+        .metaContainer {
+
+            font-size: 14px;
+            margin: 0px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+
+            div {
+                flex-grow: 1;
+                margin-right: 20px;
+            }
+        }
+
+
+
+        .openIconVisible {
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+
+        .openIconHidden {
+            width: 20px;
+            height: 20px;
+            display: none;
+        }
+    }
+}
+
+.userItemActive {
+    background-color: #F2F5F5;
+}
+
+.userItemPassive {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.userItem:hover {
+    background-color: #F2F5F5;
+}
+
+.userItem:hover img {
+    display: block;
+}

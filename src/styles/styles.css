@@ -1,0 +1,274 @@
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .contentLeft {
+  width: 30%;
+  max-height: 100%;
+  overflow: scroll;
+}
+
+.content .contentLeft .leftTitle {
+  font-weight: bold;
+  text-align: left;
+  font-size: 35;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.content .contentRight {
+  width: 70%;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.content .contentRight .loading {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .contentRight .userDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .contentRight .userDetails img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content .contentRight .userDetails .nameText {
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.content .contentRight .userStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .contentRight .userTrends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .contentRight .userTrends p {
+  text-align: left;
+}
+
+.content .contentRight .userTrends .headingText {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3d3d3d;
+}
+
+.content .contentRight .userTrends .trendContainer {
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.content .contentRight .userTrends .similarContainer {
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.nav {
+  width: 100%;
+  height: 8vh;
+  background-color: #423C68;
+}
+
+.statCard {
+  width: 32%;
+  box-shadow: 1px 2px 19px 0px rgba(227, 227, 227, 0.75);
+  -webkit-box-shadow: 1px 2px 19px 0px rgba(227, 227, 227, 0.75);
+  -moz-box-shadow: 1px 2px 19px 0px rgba(227, 227, 227, 0.75);
+  border-style: none;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #4A47A3;
+}
+
+.statCard .headingText {
+  margin: 0px;
+  font-size: 10px;
+  color: #413C69;
+}
+
+.statCard .valueText {
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.trendIconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.trendIconsContainer .trendIcon {
+  background-color: #A7C5EB;
+  width: 23%;
+  margin-right: 20px;
+  border-radius: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.trendIconsContainer .trendIcon img {
+  width: 25px;
+  height: 25px;
+}
+
+.userItem {
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userItem .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+
+.userItem div .nameText {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.userItem div .metaContainer {
+  font-size: 14px;
+  margin: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  align-items: center;
+}
+
+.userItem div .metaContainer div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 20px;
+}
+
+.userItem div .openIconVisible {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.userItem div .openIconHidden {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.userItemActive {
+  background-color: #F2F5F5;
+}
+
+.userItemPassive {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.userItem:hover {
+  background-color: #F2F5F5;
+}
+
+.userItem:hover img {
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */
